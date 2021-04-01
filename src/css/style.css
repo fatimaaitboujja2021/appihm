@@ -1,5 +1,45 @@
 .background-image{
-    -fx-background-image: url("file:/C:/Users/User/IdeaProjects/StonePaperScissors/src/img/background.jpg");
+    -fx-background-image: url("1781.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1500 1080;
+}
+
+
+.background-image-game{
+    -fx-background-image: url("1781.jpg");
     -fx-background-repeat: stretch;
     -fx-background-size: 1920 1080;
+}
+#WelcomPane{
+
+    -fx-background-image: url("photo.png");
+   /* -fx-background-repeat: stretch;*/
+    -fx-background-size: 500 500;
+
+}
+
+Button {
+    -fx-background-radius: 50px;
+}
+
+TextField,PasswordField{
+    -fx-background-radius: 50px;
+}
+.panelogin{
+    -fx-background-image: url("1781.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1000 1000;
+
+}
+
+
+.paneregister{
+    -fx-background-image: url("1781.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1000 1000;
+
+}
+
+.AnchorPane{
+    -fx-background-image:url("1781.jpg") ;
 }

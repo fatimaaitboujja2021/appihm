@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="576.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+   <children>
+      <AnchorPane id="panelogin" fx:id="panelogin" prefHeight="678.0" prefWidth="923.0" styleClass="panelogin" stylesheets="@css/style.css">
+         <children>
+            <Pane layoutX="278.0" layoutY="89.0" prefHeight="482.0" prefWidth="381.0" style="-fx-background-color: #C2DC9F; -fx-background-radius: 20; -fx-border-color: #CC2E05; -fx-border-radius: 20; -fx-border-width: 4;" AnchorPane.bottomAnchor="107.0" AnchorPane.leftAnchor="278.0" AnchorPane.rightAnchor="264.0" AnchorPane.topAnchor="89.0">
+               <children>
+                  <TextField id="usernameTextField" fx:id="usernameTextField" layoutX="11.0" layoutY="61.0" prefHeight="49.0" prefWidth="359.0" promptText="username or email">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField id="enterPasswordField" fx:id="enterPasswordField" layoutX="11.0" layoutY="128.0" prefHeight="49.0" prefWidth="359.0" promptText="password">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </PasswordField>
+                  <Button id="loginButton" fx:id="loginButton" layoutX="31.0" layoutY="260.0" mnemonicParsing="false" onAction="#loginButtonOnAction" onMouseEntered="#entred" onMouseExited="#exited" prefHeight="59.0" prefWidth="317.0" style="-fx-background-color: #95CB44; -fx-border-color: #CC2;" stylesheets="@css/style.css" text="Sign in" textFill="#fdf4f4">
+                     <font>
+                        <Font name="Consolas Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Label id="LblError" layoutX="62.0" layoutY="177.0" textFill="#5383ff">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutY="229.0" prefHeight="13.0" prefWidth="378.0" />
+                  <Button id="btnSignin" layoutX="31.0" layoutY="326.0" mnemonicParsing="false" onAction="#SignupButtonOnAction" onMouseEntered="#entred" onMouseExited="#exited" prefHeight="59.0" prefWidth="317.0" style="-fx-background-color: #95CB44; -fx-border-color: #CC2;" stylesheets="@css/style.css" text="Sign up" textFill="#fdf4f4">
+                     <font>
+                        <Font name="Consolas Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="loginMessageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="187.0" prefHeight="39.0" prefWidth="273.0" textFill="#dd0d0d">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Button id="btnSignin" layoutX="31.0" layoutY="397.0" mnemonicParsing="false" onAction="#switchToAbout" onMouseEntered="#entred" onMouseExited="#exited" prefHeight="59.0" prefWidth="317.0" stylesheets="@css/style.css" text="About Game">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="100.0" left="100.0" right="100.0" />
+               </padding>
+            </Pane>
+            <Button id="cancelButton" fx:id="cancelButton" layoutX="805.0" layoutY="619.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" onMouseEntered="#entred" onMouseExited="#exited" prefHeight="49.0" prefWidth="114.0" text="EXIT">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

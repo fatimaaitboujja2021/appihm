@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="401.0" prefWidth="427.0" style="-fx-background-color: #eefc8b;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SplashFXMLController">
+   <children>
+      <ImageView id="AnchorPane" fitHeight="337.0" fitWidth="536.0" layoutY="54.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" styleClass="AnchorPane" AnchorPane.bottomAnchor="66.5" AnchorPane.topAnchor="66.5">
+         <image>
+            <Image url="@splash.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="173.0" layoutY="288.0" prefHeight="32.0" prefWidth="170.0" text="Loading............" textFill="#eefc8b">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="122.0" prefHeight="102.0" prefWidth="274.0" text="Welcome to My  Room Game" textFill="#204c34" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>
